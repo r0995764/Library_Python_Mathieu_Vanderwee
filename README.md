@@ -22,59 +22,42 @@ De volgende Python-pakketten:
 sqlite3 (standaard inbegrepen in Python)
 pandas
 openpyxl
+
 Installatie-instructies
 Kloon de repository
-
-bash
-Code kopiëren
 git clone <repo_url>  
 cd <repo_folder>  
-Maak een virtuele omgeving aan en activeer deze
 
-bash
-Code kopiëren
+Maak een virtuele omgeving aan en activeer deze
 python -m venv venv  
 source venv/bin/activate  # Voor Mac/Linux  
 venv\Scripts\activate     # Voor Windows  
-Installeer de vereiste pakketten
 
-bash
-Code kopiëren
+Installeer de vereiste pakketten
 pip install -r requirements.txt  
-Maak een data-map en plaats de database (library.db) hierin
-Je kunt een voorbeelddatabase aanmaken of de bestaande voorbeelddata gebruiken.
+
+De database staat hier al in dus moet je niet meer van ergens halen
 
 Voer het programma uit
-
-bash
-Code kopiëren
 python main.py  
-Bestandstructuur
-bash
-Code kopiëren
-library_management/  
-├── main.py               # Hoofdprogramma  
-├── data/  
-│   └── library.db        # SQLite-database  
-├── requirements.txt      # Benodigde pakketten  
-└── README.md             # Uitleg en handleiding  
+
 Voorbeeldgebruik
+
 Boekenbeheer
+
 Voeg een boek toe:
 Bij uitvoeren via het interactieve menu:
-yaml
-Code kopiëren
 Titel: Harry Potter  
 Auteur: J.K. Rowling  
 Jaar: 1997  
+
+
 Gebruikersbeheer
+
 Voeg een gebruiker toe:
 Bij uitvoeren via het interactieve menu:
-makefile
-Code kopiëren
 Gebruikersnaam: John Doe  
 Email: john.doe@example.com  
-Exporteren
 Exporteren naar CSV:
 Geef de tabelnaam (bijvoorbeeld books of users) op in het menu.
 
