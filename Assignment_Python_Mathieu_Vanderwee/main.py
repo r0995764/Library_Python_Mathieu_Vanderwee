@@ -91,16 +91,16 @@ def view_users():
     finally:
         conn.close()
 
-def add_new_user(username, email):
+def add_new_user(name, email):
     try:
         conn = sqlite3.connect('library.db')
         cursor = conn.cursor()
         cursor.execute(
-            "INSERT INTO users (username, email) VALUES (?, ?)",
-            (username, email)
+            "INSERT INTO users (name, email) VALUES (?, ?)",
+            (name, email)
         )
         conn.commit()
-        print(f"Gebruiker '{username}' succesvol toegevoegd.")
+        print(f"Gebruiker '{name}' succesvol toegevoegd.")
     except sqlite3.Error as e:
         print(f"Fout bij het toevoegen van de gebruiker: {e}")
     finally:
@@ -118,7 +118,7 @@ def edit_user_with_id(user_id, new_username, new_email):
             return
 
         cursor.execute(
-            "UPDATE users SET username = ?, email = ? WHERE id = ?",
+            "UPDATE users SET name = ?, email = ? WHERE id = ?",
             (new_username, new_email, user_id)
         )
         conn.commit()
