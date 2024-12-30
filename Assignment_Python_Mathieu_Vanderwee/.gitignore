@@ -1,0 +1,35 @@
+# Python specifieke bestanden
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Virtuele omgeving
+venv/
+env/
+ENV/
+
+# Configuratie- en logbestanden
+*.log
+*.env
+*.ini
+
+# Gevoelige bestanden
+library.db
+*.db
+config.json
+
+# Systeem specifieke bestanden
+.DS_Store
+Thumbs.db
+
+# IDE-specifieke bestanden
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Geëxporteerde bestanden
+*.csv
+*.xlsx
