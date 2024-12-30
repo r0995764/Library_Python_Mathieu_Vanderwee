@@ -24,6 +24,7 @@ config.json
 .DS_Store
 Thumbs.db
 settings.json
+requirements.txt
 # IDE-specifieke bestanden
 .vscode/
 .idea/
