@@ -23,7 +23,7 @@ config.json
 # Systeem specifieke bestanden
 .DS_Store
 Thumbs.db
-
+settings.json
 # IDE-specifieke bestanden
 .vscode/
 .idea/
